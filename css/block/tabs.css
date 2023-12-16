@@ -1,0 +1,70 @@
+.tabs-container {
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.tab__item-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 456px;
+    padding: 16px 0px;
+    gap: 8px;
+    border-radius: 10px;
+    font-family: Commissioner;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border: 0.5px solid var(--black, #000);
+    cursor: pointer;
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+.tab__item-btn--active {
+    background: var(--black, #000);
+    color: var(--white, var(--color-color-background-primary, #fff));
+}
+
+.tab__item-btn--active .svg-icon path {
+    fill: var(--white, var(--color-color-background-primary, #fff));
+}
+
+.tab__item-btn .svg-icon path {
+    fill: var(--black, #000);
+    transition: fill 0.3s ease;
+}
+
+.tab__item-btn:hover {
+    background: var(--black, #000);
+    color: var(--white, var(--color-color-background-primary, #fff));
+}
+
+.tab__item-btn:hover .svg-icon path {
+    fill: var(--white, var(--color-color-background-primary, #fff)) !important;
+}
+
+@media (min-width: 320px) and (max-width: 450px) {
+    .tabs-container {
+        width: 100%;
+        overflow-x: auto;
+        gap: 8px;
+        margin-bottom: 0px;
+    }
+
+    .tabs-container::-webkit-scrollbar {
+        width: 0;
+    }
+
+    .tab__item-btn {
+        width: 153px;
+        padding: 10px 0px;
+        font-size: 14px;
+        line-height: 24px;
+    }
+}

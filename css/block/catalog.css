@@ -1,0 +1,136 @@
+.catalog {
+    margin-top: 72px;
+}
+
+.catalog__title {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.catalog-catalog__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 72px;
+}
+
+.catalog__list {
+    display: flex;
+    gap: 24px;
+}
+
+.catalog__item {
+    width: 261px;
+    border-radius: 20px;
+    padding: 17px 16px 24px 16px;
+    background: var(--grey, #f4f4f4);
+    cursor: pointer;
+}
+
+.catalog-possibilities .catalog__item {
+    height: 299px;
+}
+
+.catalog-recommendations .catalog__item {
+    height: 348px;
+}
+
+.catalog__item-img {
+    display: grid;
+    place-items: center;
+}
+
+.catalog__item-img img {
+    max-width: 100%;
+    transition: all 0.3s ease-in;
+}
+
+.catalog__item .catalog__item-img:hover img {
+    transform: scale(1.1);
+}
+
+.catalog__item-title {
+    margin-top: 8px;
+    font-weight: 300;
+    line-height: 20px;
+    color: var(--black, #000);
+}
+
+.catalog__price {
+    line-height: 20px;
+}
+
+.catalog-button__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+.catalog-button__btn {
+    display: flex;
+    justify-content: center;
+    height: 42px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 16px;
+}
+
+.catalog-buy-button {
+    width: 154px;
+    padding: 11px 32px;
+    background: var(--dark-grey, #1e1e1e);
+    color: var(--white, var(--color-color-background-primary, #fff));
+    line-height: 20px;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in;
+}
+
+.catalog-buy-button:hover {
+    background: var(--black, #000);
+    cursor: pointer;
+}
+
+.catalog-add-to-cart-button {
+    border: 1px solid var(--black, #000);
+    background: var(--grey, #f4f4f4);
+    padding: 5px 18px 5px 16px;
+    transition: all 0.3s ease-in;
+}
+
+.catalog-add-to-cart-button svg path {
+    transition: all 0.3s ease-in;
+}
+
+.catalog-add-to-cart-button:hover {
+    cursor: pointer;
+    background: var(--black, #000);
+}
+
+.catalog-add-to-cart-button:hover svg path {
+    fill: white;
+} 
+
+.catalog__item-link {
+    display: grid;
+    place-items: center;
+    height: 299px;
+    width: 261px;
+    border-radius: 20px;
+    background: var(--dark-grey, #1e1e1e);
+    color: var(--white, var(--color-color-background-primary, #fff));
+    line-height: 20px;
+    transition: all 0.3s ease-in;
+}
+
+.catalog__item-link-recommendations {
+    height: 348px;
+}
+
+.catalog__item-link:hover {
+    background: var(--black, #000);
+    cursor: pointer;
+}

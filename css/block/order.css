@@ -1,0 +1,47 @@
+.order {
+    min-width: 1920px;
+    height: 737px;
+    background-image: url("./../../img/order.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+}
+
+.order__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    
+}
+
+.order__title {
+    color: var(--color-color-background-primary, #fff);
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 39px;
+}
+
+.order__btn {
+    border-radius: 10px;
+    border: 1px solid var(--white, #fff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 52px;
+    padding: 16px 32px;
+    background: transparent;
+    line-height: 20px;
+    color: var(--white, var(--color-color-background-primary, #FFF));
+    transition: all 0.3s ease-out;
+}
+
+.order__btn:hover {
+    cursor: pointer;
+    background-color: var(--black, #000);
+    border: none;
+}
